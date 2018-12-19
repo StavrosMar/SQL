@@ -29,3 +29,9 @@ SELECT o.orderid, c.city
 from orders o
 inner join customers c on c.customerId = o.customerId
 where o.orderid like "__[34]%"
+
+
+/* Aliases */
+
+SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
+FROM Customers;
